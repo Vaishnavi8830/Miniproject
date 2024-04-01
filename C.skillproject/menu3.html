@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(pngtree-burger-restaurant-food-background-image_2409560.jpg);
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+
+        .menu-item img {
+            width: 100px;
+            height: auto;
+            margin-right: 20px;
+        }
+
+        .menu-item button {
+            padding: 5px 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .menu-item button:hover {
+            background-color: #0056b3;
+        }
+
+        .customer-reviews {
+            margin-top: 20px;
+            border-top: 2px solid #ccc;
+            padding-top: 20px;
+        }
+
+        .review {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Menu</h1>
+        <div class="menu-item">
+            <img src="indian-food-photography.jpg" alt="Burger">
+            <span>Burger</span>
+            <button onclick="addToCart('Burger')">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="pngtree-an-asian-restaurant-with-plates-of-food-image_13026791.jpg" alt="Pizza">
+            <span>Pizza</span>
+            <button onclick="addToCart('Pizza')">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="rest.jpg" alt="Salad">
+            <span>Salad</span>
+            <button onclick="addToCart('Salad')">Add to Cart</button>
+        </div>
+        <!-- Add more menu items as needed -->
+
+        <div class="customer-reviews">
+            <h2>Customer Reviews</h2>
+            <div class="review">
+                <p>Excellent food! I loved the burger.</p>
+                <p><strong>John Doe</strong></p>
+            </div>
+            <div class="review">
+                <p>Great pizza and fast service.</p>
+                <p><strong>Jane Smith</strong></p>
+            </div>
+            <!-- Add more reviews as needed -->
+        </div>
+    </div>
+
+    <script>
+        function addToCart(item) {
+            alert("You've added " + item + " to your cart.");
+            // Here you can implement logic to add the item to the customer's cart
+        }
+    </script>
+
+</body>
+
+</html>
